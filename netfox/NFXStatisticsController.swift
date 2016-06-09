@@ -110,9 +110,9 @@ class NFXStatisticsController: NFXGenericController
         for model in models {
             
             if model.isSuccessful() {
-                successfulRequests++
+                successfulRequests += 1
             } else  {
-                failedRequests++
+                failedRequests += 1
             }
             
             if (model.requestBodyLength != nil) {
