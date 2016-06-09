@@ -198,9 +198,12 @@ class NFXDetailsController: NFXGenericController, MFMailComposeViewControllerDel
         
         if self.selectedModel.shortType == HTTPModelShortType.IMAGE.rawValue {
             bodyDetailsController = NFXImageBodyDetailsController()
+        } else if self.selectedModel.shortType == HTTPModelShortType.HTML.rawValue {
+            bodyDetailsController = NFXHTMLBodyDetailsController()
         } else {
             bodyDetailsController = NFXRawBodyDetailsController()
         }
+        
         bodyDetailsController.selectedModel(self.selectedModel)
         self.navigationController?.pushViewController(bodyDetailsController, animated: true)
         return bodyDetailsController

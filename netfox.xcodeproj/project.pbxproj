@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18ABF5C21D098BFA0063016A /* NFXHTMLBodyDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ABF5C11D098BFA0063016A /* NFXHTMLBodyDetailsController.swift */; };
 		CEFE42C51C0DDBD8001A56E0 /* NFX.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFE42B51C0DDBD8001A56E0 /* NFX.swift */; };
 		CEFE42C61C0DDBD8001A56E0 /* NFXAssets.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFE42B61C0DDBD8001A56E0 /* NFXAssets.swift */; };
 		CEFE42C71C0DDBD8001A56E0 /* NFXDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFE42B71C0DDBD8001A56E0 /* NFXDetailsController.swift */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18ABF5C11D098BFA0063016A /* NFXHTMLBodyDetailsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NFXHTMLBodyDetailsController.swift; sourceTree = "<group>"; };
 		B3BC020F1C09CDA000C17F3A /* netfox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = netfox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEFE42B51C0DDBD8001A56E0 /* NFX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NFX.swift; sourceTree = "<group>"; };
 		CEFE42B61C0DDBD8001A56E0 /* NFXAssets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NFXAssets.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 				CEFE42C21C0DDBD8001A56E0 /* NFXRawBodyDetailsController.swift */,
 				CEFE42C31C0DDBD8001A56E0 /* NFXSettingsController.swift */,
 				CEFE42C41C0DDBD8001A56E0 /* NFXStatisticsController.swift */,
+				18ABF5C11D098BFA0063016A /* NFXHTMLBodyDetailsController.swift */,
 			);
 			path = netfox;
 			sourceTree = "<group>";
@@ -132,6 +135,7 @@
 		B3BC02061C09CDA000C17F3A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = kasketis;
 				TargetAttributes = {
@@ -175,6 +179,7 @@
 				CEFE42CD1C0DDBD8001A56E0 /* NFXImageBodyDetailsController.swift in Sources */,
 				CEFE42CA1C0DDBD8001A56E0 /* NFXHelper.swift in Sources */,
 				CEFE42C51C0DDBD8001A56E0 /* NFX.swift in Sources */,
+				18ABF5C21D098BFA0063016A /* NFXHTMLBodyDetailsController.swift in Sources */,
 				CEFE42D41C0DDBD8001A56E0 /* NFXStatisticsController.swift in Sources */,
 				CEFE42C81C0DDBD8001A56E0 /* NFXGenericBodyDetailsController.swift in Sources */,
 				CEFE42C91C0DDBD8001A56E0 /* NFXGenericController.swift in Sources */,
@@ -286,6 +291,7 @@
 		B3BC02181C09CDA000C17F3A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -296,12 +302,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kasketis.netfox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		B3BC02191C09CDA000C17F3A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
